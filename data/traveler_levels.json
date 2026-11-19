@@ -1,0 +1,220 @@
+{
+  "levels": [
+    {
+      "id": 1,
+      "title": "First Trip",
+      "subtitle": "A Simple Border Crossing",
+      "intro_text": "Welcome to the Bureau of Mobility! You are traveling from Valdoria to Norwen for an urgent cheese-tasting symposium. Your passport is fresh and valid, and your bank reserve is plenty. You just need an Entry Visa for Norwen before departure day.",
+      "goal_text": "Obtain a Norwen Entry Visa and depart before Day 5.",
+      "traveler_name": "Clara Vance",
+      "origin": "valdoria",
+      "destination": "norwen",
+      "transit_countries": [],
+      "start_day": 1,
+      "deadline_day": 5,
+      "start_budget": 150,
+      "declared_bank_balance": 300,
+      "initial_documents": [
+        {
+          "doc_type": "passport",
+          "owner_name": "Clara Vance",
+          "nationality": "valdoria",
+          "target_country": "",
+          "issue_day": 1,
+          "expiry_day": 60,
+          "stamped": true,
+          "extra_data": {}
+        }
+      ],
+      "available_actions": [
+        "apply_visa",
+        "renew_passport",
+        "wait_day",
+        "travel"
+      ],
+      "hints": [
+        "Norwen requires a valid Passport (at least 30 days left on arrival) and a Norwen Entry Visa.",
+        "Your passport expires on Day 60, which is plenty! Click 'Apply for Entry Visa' in the Agency Panel, then press 'Depart Now'."
+      ],
+      "star_thresholds": {
+        "three_stars": { "max_days_used": 2, "min_budget_left": 90 },
+        "two_stars": { "max_days_used": 4, "min_budget_left": 40 }
+      }
+    },
+    {
+      "id": 2,
+      "title": "Fresh Ink",
+      "subtitle": "Mind the Expiration Date",
+      "intro_text": "You are heading to Norwen again, but look closely at your current passport: it expires on Day 20! Norwen border rules require your passport to remain valid for at least 30 days beyond your arrival date.",
+      "goal_text": "Renew your passport first, then secure a Norwen Entry Visa before Day 7.",
+      "traveler_name": "Arthur Pendelton",
+      "origin": "valdoria",
+      "destination": "norwen",
+      "transit_countries": [],
+      "start_day": 1,
+      "deadline_day": 7,
+      "start_budget": 160,
+      "declared_bank_balance": 350,
+      "initial_documents": [
+        {
+          "doc_type": "passport",
+          "owner_name": "Arthur Pendelton",
+          "nationality": "valdoria",
+          "target_country": "",
+          "issue_day": -40,
+          "expiry_day": 20,
+          "stamped": true,
+          "extra_data": {}
+        }
+      ],
+      "available_actions": [
+        "renew_passport",
+        "apply_visa",
+        "buy_insurance",
+        "wait_day",
+        "travel"
+      ],
+      "hints": [
+        "Norwen requires your passport to be valid for at least 30 days after arrival. An expiry of Day 20 will be rejected at the border!",
+        "Renew your Passport first (2 days, $45), then Apply for Entry Visa (2 days, $50), and Depart on Day 5."
+      ],
+      "star_thresholds": {
+        "three_stars": { "max_days_used": 4, "min_budget_left": 60 },
+        "two_stars": { "max_days_used": 6, "min_budget_left": 30 }
+      }
+    },
+    {
+      "id": 3,
+      "title": "Tight Schedule",
+      "subtitle": "Short-Validity Paperwork",
+      "intro_text": "You are traveling to Orlanda for a canal architecture expo. Orlanda requires a Passport (valid 20+ days beyond arrival), an Entry Visa, Travel Insurance, and a certified Bank Statement. Watch out: a Bank Statement in this jurisdiction is delicate and if you wait too long or waste days, you will miss the strict Day 7 deadline!",
+      "goal_text": "Gather all 4 required documents for Orlanda within 6 days and budget.",
+      "traveler_name": "Elena Rostova",
+      "origin": "valdoria",
+      "destination": "orlanda",
+      "transit_countries": [],
+      "start_day": 1,
+      "deadline_day": 7,
+      "start_budget": 160,
+      "declared_bank_balance": 250,
+      "initial_documents": [
+        {
+          "doc_type": "passport",
+          "owner_name": "Elena Rostova",
+          "nationality": "valdoria",
+          "target_country": "",
+          "issue_day": -35,
+          "expiry_day": 18,
+          "stamped": true,
+          "extra_data": {}
+        }
+      ],
+      "available_actions": [
+        "renew_passport",
+        "apply_visa",
+        "get_bank_statement",
+        "buy_insurance",
+        "wait_day",
+        "travel"
+      ],
+      "hints": [
+        "Your starting passport expires on Day 18, which is less than 20 days after any arrival day. You MUST renew your passport first!",
+        "Exact schedule: Renew Passport (2d, $45) -> Apply for Visa (2d, $45) -> Certify Bank Statement (1d, $20) -> Buy Travel Insurance (1d, $25). Total: 6 days (Day 7), $135 spent."
+      ],
+      "star_thresholds": {
+        "three_stars": { "max_days_used": 6, "min_budget_left": 25 },
+        "two_stars": { "max_days_used": 6, "min_budget_left": 10 }
+      }
+    },
+    {
+      "id": 4,
+      "title": "Paper Trail",
+      "subtitle": "Prerequisites & Tight Budget",
+      "intro_text": "Keshmar's solar summit awaits! Keshmar will not even accept a Visa application unless you ALREADY hold an official Invitation Letter. On top of that, border health authorities demand a Vaccination Certificate and Travel Insurance, and your budget of $145 leaves zero room for unnecessary paperwork.",
+      "goal_text": "Obtain an Invitation Letter, then a Keshmar Visa, plus Vaccination & Insurance before Day 8.",
+      "traveler_name": "Marcus Sterling",
+      "origin": "valdoria",
+      "destination": "keshmar",
+      "transit_countries": [],
+      "start_day": 1,
+      "deadline_day": 8,
+      "start_budget": 145,
+      "declared_bank_balance": 300,
+      "initial_documents": [
+        {
+          "doc_type": "passport",
+          "owner_name": "Marcus Sterling",
+          "nationality": "valdoria",
+          "target_country": "",
+          "issue_day": 1,
+          "expiry_day": 60,
+          "stamped": true,
+          "extra_data": {}
+        }
+      ],
+      "available_actions": [
+        "request_invitation",
+        "apply_visa",
+        "get_vaccination",
+        "buy_insurance",
+        "get_bank_statement",
+        "wait_day",
+        "travel"
+      ],
+      "hints": [
+        "Do NOT buy a Bank Statement—Keshmar checks your reserve balance automatically without requiring the paper certificate, and your $145 budget needs every coin!",
+        "Order: Request Invitation Letter (2d, $30) -> Apply for Keshmar Visa (3d, $60) -> Get Vaccination Cert (1d, $25) -> Buy Travel Insurance (1d, $25). Total: 7 days, $140."
+      ],
+      "star_thresholds": {
+        "three_stars": { "max_days_used": 7, "min_budget_left": 5 },
+        "two_stars": { "max_days_used": 7, "min_budget_left": 0 }
+      }
+    },
+    {
+      "id": 5,
+      "title": "Grand Route",
+      "subtitle": "Multi-Country Corridor Crossing",
+      "intro_text": "The ultimate bureaucratic gauntlet: traveling from Valdoria to the archipelago of Sunmere via the highland rail hub of Tavik. Because your train routes through Tavik, you need a Transit Permit for Tavik in addition to Sunmere's full entry dossier (Passport valid 30+ days, Invitation Letter, Sunmere Visa, Vaccination Certificate, Travel Insurance, and Bank Statement).",
+      "goal_text": "Assemble the complete Sunmere entry packet plus a Tavik Transit Permit before Day 10.",
+      "traveler_name": "Sonia Lindqvist",
+      "origin": "valdoria",
+      "destination": "sunmere",
+      "transit_countries": ["tavik"],
+      "start_day": 1,
+      "deadline_day": 10,
+      "start_budget": 185,
+      "declared_bank_balance": 280,
+      "initial_documents": [
+        {
+          "doc_type": "passport",
+          "owner_name": "Sonia Lindqvist",
+          "nationality": "valdoria",
+          "target_country": "",
+          "issue_day": 1,
+          "expiry_day": 55,
+          "stamped": true,
+          "extra_data": {}
+        }
+      ],
+      "available_actions": [
+        "request_invitation",
+        "apply_visa",
+        "get_transit_permit",
+        "get_vaccination",
+        "buy_insurance",
+        "get_bank_statement",
+        "renew_passport",
+        "wait_day",
+        "travel"
+      ],
+      "hints": [
+        "Your passport expires on Day 55, which is more than 30 days after Day 10—do NOT waste time or money renewing it!",
+        "Get Invitation Letter ($30, 2d) -> Sunmere Visa ($50, 2d) -> Transit Permit for Tavik ($30, 1d) -> Vaccination ($25, 1d) -> Travel Insurance ($25, 1d) -> Bank Statement ($20, 1d). Total: 8 days (Day 9), $180."
+      ],
+      "star_thresholds": {
+        "three_stars": { "max_days_used": 8, "min_budget_left": 5 },
+        "two_stars": { "max_days_used": 9, "min_budget_left": 0 }
+      }
+    }
+  ]
+}

@@ -1,0 +1,160 @@
+{
+  "countries": [
+    {
+      "id": "valdoria",
+      "name": "Valdoria",
+      "motto": "Order Through Paperwork",
+      "description": "A grand alpine republic famous for clockwork bureaucracy and chocolate stamps.",
+      "map_pos": [180, 175],
+      "flag": {
+        "style": "tricolor_h",
+        "colors": [[44, 82, 130], [237, 242, 247], [197, 48, 48]],
+        "emblem": "star",
+        "emblem_color": [214, 158, 46]
+      },
+      "visa_processing_days": 2,
+      "visa_fee": 40,
+      "passport_min_validity_days": 15,
+      "min_bank_balance": 0,
+      "required_documents": ["passport", "visa"],
+      "visa_prerequisites": ["passport"],
+      "relations": {
+        "norwen": "visa_free",
+        "keshmar": "visa_required",
+        "orlanda": "visa_required",
+        "tavik": "visa_required",
+        "sunmere": "visa_free"
+      }
+    },
+    {
+      "id": "norwen",
+      "name": "Norwen",
+      "motto": "Pine, Fjord, and Seal",
+      "description": "A northern maritime commonwealth with brisk winds and strict passport validity laws.",
+      "map_pos": [390, 120],
+      "flag": {
+        "style": "nordic_cross",
+        "colors": [[26, 54, 93], [246, 224, 94], [43, 108, 176]],
+        "emblem": "none",
+        "emblem_color": [255, 255, 255]
+      },
+      "visa_processing_days": 2,
+      "visa_fee": 50,
+      "passport_min_validity_days": 30,
+      "min_bank_balance": 100,
+      "required_documents": ["passport", "visa"],
+      "visa_prerequisites": ["passport"],
+      "relations": {
+        "valdoria": "visa_required",
+        "keshmar": "visa_required",
+        "orlanda": "visa_free",
+        "tavik": "visa_required",
+        "sunmere": "visa_required"
+      }
+    },
+    {
+      "id": "keshmar",
+      "name": "Keshmar",
+      "motto": "Sands of Precision",
+      "description": "A bustling desert federation of spice merchants, solar towers, and meticulous health inspectors.",
+      "map_pos": [610, 165],
+      "flag": {
+        "style": "tricolor_v",
+        "colors": [[192, 86, 33], [254, 243, 199], [47, 133, 90]],
+        "emblem": "sun",
+        "emblem_color": [192, 86, 33]
+      },
+      "visa_processing_days": 3,
+      "visa_fee": 60,
+      "passport_min_validity_days": 30,
+      "min_bank_balance": 150,
+      "required_documents": ["passport", "visa", "vaccination_certificate", "travel_insurance"],
+      "visa_prerequisites": ["passport", "invitation_letter"],
+      "relations": {
+        "valdoria": "visa_required",
+        "norwen": "visa_required",
+        "orlanda": "visa_required",
+        "tavik": "transit_permit_required",
+        "sunmere": "visa_required"
+      }
+    },
+    {
+      "id": "orlanda",
+      "name": "Orlanda",
+      "motto": "Harbors Open to the Prepared",
+      "description": "A verdant canal nation of art galleries, botanical domes, and multi-tiered financial audits.",
+      "map_pos": [230, 310],
+      "flag": {
+        "style": "bicolor_h",
+        "colors": [[49, 151, 149], [255, 250, 240]],
+        "emblem": "circle",
+        "emblem_color": [221, 107, 32]
+      },
+      "visa_processing_days": 2,
+      "visa_fee": 45,
+      "passport_min_validity_days": 20,
+      "min_bank_balance": 200,
+      "required_documents": ["passport", "visa", "bank_statement", "travel_insurance"],
+      "visa_prerequisites": ["passport"],
+      "relations": {
+        "valdoria": "visa_required",
+        "norwen": "visa_free",
+        "keshmar": "visa_required",
+        "tavik": "visa_required",
+        "sunmere": "visa_free"
+      }
+    },
+    {
+      "id": "tavik",
+      "name": "Tavik",
+      "motto": "Every Crossing Accounted For",
+      "description": "An industrial highland crossroads guarding the central rail corridor between East and West.",
+      "map_pos": [445, 275],
+      "flag": {
+        "style": "diagonal",
+        "colors": [[74, 85, 104], [226, 232, 240], [155, 44, 44]],
+        "emblem": "diamond",
+        "emblem_color": [236, 201, 75]
+      },
+      "visa_processing_days": 3,
+      "visa_fee": 55,
+      "passport_min_validity_days": 25,
+      "min_bank_balance": 150,
+      "required_documents": ["passport", "visa", "invitation_letter", "transit_permit"],
+      "visa_prerequisites": ["passport", "invitation_letter"],
+      "relations": {
+        "valdoria": "transit_permit_required",
+        "norwen": "transit_permit_required",
+        "keshmar": "transit_permit_required",
+        "orlanda": "transit_permit_required",
+        "sunmere": "transit_permit_required"
+      }
+    },
+    {
+      "id": "sunmere",
+      "name": "Sunmere",
+      "motto": "Breeze, Citrus, and Rubber Stamps",
+      "description": "A sunny archipelago where ferries run on time and every visitor needs certified health & transit papers.",
+      "map_pos": [650, 315],
+      "flag": {
+        "style": "stripes",
+        "colors": [[56, 178, 172], [254, 235, 200], [237, 137, 54]],
+        "emblem": "sun",
+        "emblem_color": [221, 107, 32]
+      },
+      "visa_processing_days": 2,
+      "visa_fee": 50,
+      "passport_min_validity_days": 30,
+      "min_bank_balance": 200,
+      "required_documents": ["passport", "visa", "vaccination_certificate", "travel_insurance", "bank_statement"],
+      "visa_prerequisites": ["passport", "invitation_letter"],
+      "relations": {
+        "valdoria": "visa_required",
+        "norwen": "visa_required",
+        "keshmar": "visa_required",
+        "orlanda": "visa_free",
+        "tavik": "transit_permit_required"
+      }
+    }
+  ]
+}

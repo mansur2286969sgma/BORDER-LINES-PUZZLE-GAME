@@ -1,0 +1,124 @@
+{
+  "shifts": [
+    {
+      "id": 1,
+      "title": "Shift 1: Morning Desk",
+      "subtitle": "Basic Passport & Visa Inspection",
+      "destination": "valdoria",
+      "current_day": 10,
+      "seed": 101,
+      "applicant_count": 5,
+      "time_limit_seconds": 0,
+      "pay_per_correct": 25,
+      "penalty_per_wrong": 15,
+      "max_strikes": 3,
+      "intro_text": "Welcome to the Valdoria Consular Desk, Officer! Today is Day 10. Inspect each applicant's Passport and Entry Visa. Remember: citizens of Norwen and Sunmere enjoy visa-free entry to Valdoria, while others must present a valid Valdoria Entry Visa. Every passport must be valid for at least 15 days beyond today (Expiry >= Day 25).",
+      "active_rules_summary": [
+        "Today is Day 10. Destination: VALDORIA.",
+        "Required: Valid Passport (Expiry >= Day 25, i.e., 15+ days beyond Day 10).",
+        "Required: Valdoria Entry Visa (EXCEPT citizens of Norwen & Sunmere, who are Visa-Free).",
+        "All presented documents must have an official stamp and matching owner name."
+      ],
+      "announcement": "",
+      "active_documents": ["passport", "visa"],
+      "allowed_error_types": ["expired", "insufficient_validity", "missing_doc", "wrong_country"],
+      "reuse_traveler_mistakes": false
+    },
+    {
+      "id": 2,
+      "title": "Shift 2: Northern Winds",
+      "subtitle": "Name Mismatches & Missing Stamps",
+      "destination": "norwen",
+      "current_day": 15,
+      "seed": 202,
+      "applicant_count": 6,
+      "time_limit_seconds": 0,
+      "pay_per_correct": 30,
+      "penalty_per_wrong": 15,
+      "max_strikes": 3,
+      "intro_text": "You have been assigned to the Norwen Border Post on Day 15. Norwen enforces a 30-day minimum passport validity rule (Expiry >= Day 45). Orlanda citizens are visa-free; all other visitors need a Norwen Entry Visa. Watch closely for uncertified documents missing their official seal or forged name mismatches!",
+      "active_rules_summary": [
+        "Today is Day 15. Destination: NORWEN.",
+        "Passport must be valid at least 30 days beyond today (Expiry >= Day 45).",
+        "Norwen Entry Visa required (Orlanda citizens are Visa-Free).",
+        "Check every document for matching Owner Name and Official Stamp."
+      ],
+      "announcement": "",
+      "active_documents": ["passport", "visa"],
+      "allowed_error_types": ["expired", "insufficient_validity", "missing_doc", "wrong_name", "missing_stamp", "wrong_country"],
+      "reuse_traveler_mistakes": true
+    },
+    {
+      "id": 3,
+      "title": "Shift 3: Directive 44-B",
+      "subtitle": "Mid-Campaign Rule Change: Financial & Insurance Audit",
+      "destination": "orlanda",
+      "current_day": 20,
+      "seed": 303,
+      "applicant_count": 6,
+      "time_limit_seconds": 0,
+      "pay_per_correct": 35,
+      "penalty_per_wrong": 20,
+      "max_strikes": 3,
+      "intro_text": "Welcome to Orlanda Harbor Control on Day 20. A new ministerial notice has just been pinned to the board! In addition to Passports (Expiry >= Day 40) and Visas (Norwen & Sunmere citizens are visa-free), every entrant must present Travel Insurance and a certified Bank Statement showing at least $200.",
+      "active_rules_summary": [
+        "Today is Day 20. Destination: ORLANDA.",
+        "Passport validity: at least 20 days beyond today (Expiry >= Day 40).",
+        "Entry Visa required (Norwen & Sunmere citizens are Visa-Free).",
+        "NEW DIRECTIVE: Travel Insurance AND Bank Statement (Balance >= $200) required for ALL travelers."
+      ],
+      "announcement": "NOTICE BOARD — DIRECTIVE 44-B: Effective immediately, Orlanda Port Authority mandates certified Bank Statements (minimum balance $200) and active Travel Insurance for all arrivals, including visa-free nationals.",
+      "active_documents": ["passport", "visa", "bank_statement", "travel_insurance"],
+      "allowed_error_types": ["expired", "insufficient_validity", "missing_doc", "wrong_name", "missing_stamp", "insufficient_funds"],
+      "reuse_traveler_mistakes": true
+    },
+    {
+      "id": 4,
+      "title": "Shift 4: Quarantine & Sponsors",
+      "subtitle": "Health Certificates, Invitations & Shift Timer",
+      "destination": "keshmar",
+      "current_day": 25,
+      "seed": 404,
+      "applicant_count": 7,
+      "time_limit_seconds": 180,
+      "pay_per_correct": 40,
+      "penalty_per_wrong": 20,
+      "max_strikes": 3,
+      "intro_text": "High-traffic shift at Keshmar Solar Port on Day 25! Keshmar requires a Passport (Expiry >= Day 55), Entry Visa, Invitation Letter (prerequisite for Visa), Vaccination Certificate, and Travel Insurance. If an applicant routed through Tavik, they must also hold a Tavik Transit Permit. Keep an eye on the shift clock!",
+      "active_rules_summary": [
+        "Today is Day 25. Destination: KESHMAR. Timed Shift (180s).",
+        "Passport Expiry >= Day 55 (30+ days beyond Day 25).",
+        "Required Packet: Keshmar Visa, Invitation Letter, Vaccination Certificate, Travel Insurance.",
+        "If applicant transited through Tavik, a valid Tavik Transit Permit is also required."
+      ],
+      "announcement": "QUARANTINE BULLETIN: All arrivals into Keshmar must carry an Invitation Letter backing their Entry Visa, plus Vaccination & Insurance certificates.",
+      "active_documents": ["passport", "visa", "invitation_letter", "vaccination_certificate", "travel_insurance", "transit_permit"],
+      "allowed_error_types": ["expired", "insufficient_validity", "missing_doc", "wrong_name", "missing_stamp", "wrong_country", "missing_prerequisite"],
+      "reuse_traveler_mistakes": true
+    },
+    {
+      "id": 5,
+      "title": "Shift 5: Grand Archipelago Audit",
+      "subtitle": "Full Dossier Inspection Under Peak Pressure",
+      "destination": "sunmere",
+      "current_day": 30,
+      "seed": 505,
+      "applicant_count": 8,
+      "time_limit_seconds": 210,
+      "pay_per_correct": 50,
+      "penalty_per_wrong": 25,
+      "max_strikes": 3,
+      "intro_text": "Final exam at the Sunmere Ferry Terminal on Day 30! Many travelers are repeating the exact blunders seen in the Traveler Campaign (unrenewed passports, forgetting Invitation Letters, or skipping the Tavik Transit Permit). Verify the full dossier quickly and accurately!",
+      "active_rules_summary": [
+        "Today is Day 30. Destination: SUNMERE. Timed Shift (210s).",
+        "Passport Expiry >= Day 60 (30+ days beyond Day 30).",
+        "Visa required (Orlanda citizens are Visa-Free; Visa requires Invitation Letter).",
+        "Also required: Vaccination Certificate, Travel Insurance, Bank Statement (>= $200), and Tavik Transit Permit if routing via Tavik."
+      ],
+      "announcement": "PEAK SEASON ALERT: Expect travelers repeating classic campaign blunders—check passport 30-day buffer, Tavik transit permits, and $200 bank minimums!",
+      "active_documents": ["passport", "visa", "invitation_letter", "vaccination_certificate", "travel_insurance", "bank_statement", "transit_permit"],
+      "allowed_error_types": ["expired", "insufficient_validity", "missing_doc", "wrong_name", "missing_stamp", "wrong_country", "insufficient_funds", "missing_prerequisite"],
+      "reuse_traveler_mistakes": true
+    }
+  ]
+}
